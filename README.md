@@ -1,5 +1,7 @@
 # Trackmania Odometer
 
+[Openplanet link](https://openplanet.nl/files/159)
+
 ## Features
 * Display distance driven
 * Support metric and imperial units
