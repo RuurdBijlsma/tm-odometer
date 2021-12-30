@@ -1,0 +1,10 @@
+[meta]
+name = "Odometer"
+author = "RuteNL"
+category = "Overlay"
+
+siteid = 159
+version = "0.0.1"
+
+[script]
+imports = [ "Icons.as" ]
