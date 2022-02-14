@@ -4,7 +4,7 @@ author = "RuteNL"
 category = "Overlay"
 
 siteid = 159
-version = "0.0.1"
+version = "0.0.2"
 
 [script]
-imports = [ "Icons.as" ]
+dependencies = [ "Dashboard" ]
