@@ -7,4 +7,4 @@ siteid = 159
 version = "0.0.2"
 
 [script]
-dependencies = [ "Dashboard" ]
+dependencies = [ "VehicleState" ]
