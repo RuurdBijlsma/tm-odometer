@@ -40,9 +40,9 @@ const float feetInMeter = 3.2808399;
 const float yardInMeter = 1.0936133;
 const float mileInMeter = 0.000621371192;
 
-Resources::Font@ fontOswald;
-Resources::Font@ fontDigib;
-Resources::Font@ font;
+nvg::Font fontOswald;
+nvg::Font fontDigib;
+nvg::Font font;
 
 int shadowX = 1;
 int shadowY = 1;
@@ -54,14 +54,14 @@ class GUI {
     bool guiHidden = false;
 
     GUI(){
-	    @fontOswald = Resources::GetFont("Oswald-Regular.ttf");
-	    @fontDigib = Resources::GetFont("DS-DIGIB.ttf");
+	    fontOswald = nvg::LoadFont("Oswald-Regular.ttf");
+	    fontDigib = nvg::LoadFont("DS-DIGIB.ttf");
     }
 
     void Render(){
         if(!pluginEnabled) return;
 
-        @font = fontFace == Font::Classic ? fontDigib : fontOswald;
+        font = fontFace == Font::Classic ? fontDigib : fontOswald;
         if((guiHidden && !showWhenGuiHidden) || !visible)
             return;
         nvg::FontFace(font);
